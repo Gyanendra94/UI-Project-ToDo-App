@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap");
+
+* {
+  font-family: "Lemonada", cursive;
+  padding: 10px;
+  margin: 10px;
+  background-color: bisque;
+}
+.todo-container {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: fit-content;
+}
+.heading {
+}
+.myForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.myForm #todoInput {
+  border-radius: 50px;
+  border: 2px solid #fff;
+  text-align: center;
+  background-color: #fff;
+}
+.myForm #todoInput:focus {
+  outline: 0;
+  border-color: #777;
+}
+.myForm small {
+  color: red;
+  margin-top: -8px;
+  visibility: hidden;
+}
+.myForm.error small {
+  visibility: visible;
+}
+.myForm.noerror #todoInput {
+  border-color: green;
+}
+.myForm .add {
+  background-color: green;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+}
+.remove {
+  background-color: red;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+}
+.todo-list {
+  list-style-type: none;
+  line-height: 2px;
+}
+.todo-list li {
+  background-color: grey;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
