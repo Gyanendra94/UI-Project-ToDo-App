@@ -4,13 +4,12 @@ const removeAllTodo = document.querySelector(".removeAll")
 const todoList = document.querySelector(".todo-list")
 
 function showError(input, message) {
-  //formControl is just a variable name
   const formControl = input.parentElement
   formControl.className = "myForm error"
-  const small = formControl.querySelector("small") //queryselector can take ids, class, element
+  const small = formControl.querySelector("small")
   small.innerText = message
 
-  setTimeout(() => small.remove(), 3000) //error gets off after 3 secs
+  setTimeout(() => small.remove(), 3000)
 }
 
 function showSucess(input) {
@@ -27,7 +26,6 @@ function checkRequired(input) {
     todoList.appendChild(li)
 
     //clear fields
-
     todoItem.value = ""
   }
 }
